@@ -32,11 +32,30 @@ const AnimatedMenu = () => {
         classNames="menu-slide"
         unmountOnExit
       >
-        <div className="menu" onClick={toggleMenu}>
-          <a href="#hero">Home</a>
-          <a href="#aboutme">About me</a>
-          <a href="#projects">Projects</a>
-          <a href="#experience">Experience</a>
+        <div
+          className="menu dark:bg-black bg-[#f9f9f9] text-black dark:text-white"
+          onClick={toggleMenu}
+        >
+          <a href="#hero" className="menu__link">
+            Home
+          </a>
+          <a href="#aboutme" className="menu__link">
+            About me
+          </a>
+          <a href="#projects" className="menu__link">
+            Projects
+          </a>
+          <a href="#experience" className="menu__link">
+            Experience
+          </a>
+          <a
+            href="/cv.pdf"
+            download="Rabi Giri CV.pdf"
+            target="_blank"
+            className="text-primaryRed menu__link"
+          >
+            My Resume
+          </a>
         </div>
       </CSSTransition>
     </div>

@@ -38,6 +38,7 @@ const Header = () => {
           <ul className="flex gap-4">
             <li>
               <a
+                className="menu__link"
                 href="#projects"
                 onClick={(e) => {
                   e.preventDefault();
@@ -49,6 +50,7 @@ const Header = () => {
             </li>
             <li>
               <a
+                className="menu__link"
                 href="#projects"
                 onClick={(e) => {
                   e.preventDefault();
@@ -62,12 +64,25 @@ const Header = () => {
             <li>
               <a
                 href="#experience"
+                className="menu__link"
                 onClick={(e) => {
                   e.preventDefault();
                   smoothScrollTo("experience", 15);
                 }}
               >
                 Experience
+              </a>
+            </li>
+
+            {/*  */}
+            <li>
+              <a
+                href="/cv.pdf"
+                download="Rabi Giri CV.pdf"
+                target="_blank"
+                className="text-primaryRed menu__link"
+              >
+                My Resume
               </a>
             </li>
           </ul>

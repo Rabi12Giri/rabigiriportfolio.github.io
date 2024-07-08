@@ -38,7 +38,7 @@ const Aboutme = () => {
           />
         </div>
         <div className=" w-[100%] md:w-[90%] lg:w-[60%] dark:text-white grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 md:gap-4 lg:gap-9">
-          <SkillSlider skill="HTML" value={90} />
+          <SkillSlider skill="HTML5" value={90} />
           <SkillSlider skill="CSS" value={70} />
           <SkillSlider skill="TailwindCSS" value={60} />
           <SkillSlider skill="Bootstrap" value={70} />
