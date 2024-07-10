@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { CSSTransition } from "react-transition-group";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaBars, FaSpinner, FaTimes } from "react-icons/fa";
 import "../App.css"; // Create this CSS file for animations
 import ParticlesComponent from "./ParticlesComponent";
 import {
@@ -9,10 +9,19 @@ import {
 } from "react-icons/md";
 
 const AnimatedMenu = () => {
+  const [isLoading, setIsLoading] = useState(false);
+
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
+  };
+
+  const handleDownload = () => {
+    setIsLoading(true);
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 2000); // Simulate the download delay
   };
 
   return (
@@ -48,14 +57,21 @@ const AnimatedMenu = () => {
           <a href="#experience" className="menu__link">
             Experience
           </a>
-          <a
-            href="/cv.pdf"
-            download="Rabi Giri CV.pdf"
-            target="_blank"
-            className="text-primaryRed menu__link"
-          >
-            My Resume
-          </a>
+          <li>
+            <a
+              href="/cv.pdf"
+              download="Rabi Giri CV.pdf"
+              target="_blank"
+              onClick={handleDownload}
+              className="text-primaryRed menu__link flex items-center"
+            >
+              {isLoading ? (
+                <FaSpinner className="animate-spin mr-2" />
+              ) : (
+                "My Resume"
+              )}
+            </a>
+          </li>
         </div>
       </CSSTransition>
     </div>
