@@ -1,14 +1,23 @@
 import React, { useContext, useEffect, useState } from "react";
 import { DarkModeContext } from "../context/DarkModeContext";
 import { FiSun } from "react-icons/fi";
-import { FaCloudMoon } from "react-icons/fa";
+import { FaCloudMoon, FaSpinner } from "react-icons/fa";
 import AnimatedText from "./SharedUI/AnimatedText";
 import { AnimatedButton } from "./SharedUI/Buttons/Buttons";
 import { smoothScrollTo } from "../utils/scrollUtils";
 import ProgressBar from "./ProgressBar";
 
 const Header = () => {
+  const [isLoading, setIsLoading] = useState(false);
   const [showHeader, setShowHeader] = useState(false);
+
+  const handleDownload = () => {
+    setIsLoading(true);
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 2000); // Simulate the download delay
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > window.innerHeight * 0.4) {
@@ -80,9 +89,14 @@ const Header = () => {
                 href="/cv.pdf"
                 download="Rabi Giri CV.pdf"
                 target="_blank"
-                className="text-primaryRed menu__link"
+                onClick={handleDownload}
+                className="text-primaryRed menu__link flex items-center"
               >
-                My Resume
+                {isLoading ? (
+                  <FaSpinner className="animate-spin mr-2" />
+                ) : (
+                  "My Resume"
+                )}
               </a>
             </li>
           </ul>
