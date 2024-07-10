@@ -57,21 +57,19 @@ const AnimatedMenu = () => {
           <a href="#experience" className="menu__link">
             Experience
           </a>
-          <li>
-            <a
-              href="/cv.pdf"
-              download="Rabi Giri CV.pdf"
-              target="_blank"
-              onClick={handleDownload}
-              className="text-primaryRed menu__link flex items-center"
-            >
-              {isLoading ? (
-                <FaSpinner className="animate-spin mr-2" />
-              ) : (
-                "My Resume"
-              )}
-            </a>
-          </li>
+          <a
+            href="/cv.pdf"
+            download="Rabi Giri CV.pdf"
+            target="_blank"
+            onClick={handleDownload}
+            className="text-primaryRed menu__link flex items-center"
+          >
+            {isLoading ? (
+              <FaSpinner className="animate-spin mr-2" />
+            ) : (
+              "My Resume"
+            )}
+          </a>
         </div>
       </CSSTransition>
     </div>
