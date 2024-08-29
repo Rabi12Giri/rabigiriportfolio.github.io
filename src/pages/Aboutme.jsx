@@ -28,12 +28,14 @@ const Aboutme = () => {
             src={G}
             alt="Background"
             className="absolute inset-0 w-full h-full object-cover rounded-full transform scale-125"
+            loading="lazy"
           />
 
           {/* Profile photo */}
           <img
             src={ProfilePhoto}
             alt="Profile"
+            loading="lazy"
             className="relative w-full h-full object-cover rounded-full"
           />
         </div>
