@@ -43,7 +43,7 @@ const Header = () => {
         {/* <h1 className="rainbow-text text-2xl font-semibold tracking-wide">
           Rabi Giri
         </h1> */}
-        <h1 className="shine">Rabi Giri</h1>
+        <h1 className="animated-text-card">Rabi Giri</h1>
         <nav className="hidden lg:flex items-center gap-12">
           <ul className="flex gap-4">
             <li>

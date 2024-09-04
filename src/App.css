@@ -2,43 +2,40 @@ html {
   scroll-behavior: smooth;
 }
 
-/* shining logo */
-.shine {
-  font-size: 2em;
-  font-weight: 900;
-  color: rgba(255, 255, 255, 0.3);
-  background: #222 -webkit-gradient(
-      linear,
-      left top,
-      right top,
-      from(#222),
-      to(#222),
-      color-stop(0.5, #fff)
-    ) 0 0 no-repeat;
-  background-image: -webkit-linear-gradient(
-    -40deg,
-    transparent 0%,
-    transparent 40%,
-    #fff 50%,
-    transparent 60%,
-    transparent 100%
+/* aniamted text card */
+.animated-text-card {
+  font-size: 1.6rem;
+  font-family: sans-serif;
+  font-variant: small-caps;
+  font-weight: bold;
+  background: conic-gradient(
+    #862caf 0 25%,
+    #98115e 25% 50%,
+    #2980d7 50% 75%,
+    #e31b6d 75%
   );
+  background-size: 200% 200%;
+  animation: animateBackground 4.5s ease-in-out infinite;
+  color: transparent;
+  background-clip: text;
   -webkit-background-clip: text;
-  -webkit-background-size: 50px;
-  -webkit-animation: zezzz;
-  -webkit-animation-duration: 2s;
-  -webkit-animation-iteration-count: infinite;
 }
-@-webkit-keyframes zezzz {
-  0%,
-  10% {
-    background-position: -200px;
+
+@keyframes animateBackground {
+  25% {
+    background-position: 0 100%;
   }
-  20% {
-    background-position: top left;
+
+  50% {
+    background-position: 100% 100%;
   }
+
+  75% {
+    background-position: 100% 0%;
+  }
+
   100% {
-    background-position: 200px;
+    background-position: 0 0;
   }
 }
 
