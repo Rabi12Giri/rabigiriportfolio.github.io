@@ -1,11 +1,8 @@
-import React, { useContext, useEffect, useState } from "react";
-import { DarkModeContext } from "../context/DarkModeContext";
-import { FiSun } from "react-icons/fi";
-import { FaCloudMoon, FaSpinner } from "react-icons/fa";
-import AnimatedText from "./SharedUI/AnimatedText";
-import { AnimatedButton } from "./SharedUI/Buttons/Buttons";
+import React, { useEffect, useState } from "react";
+import { FaSpinner } from "react-icons/fa";
 import { smoothScrollTo } from "../utils/scrollUtils";
 import ProgressBar from "./ProgressBar";
+import { fullName } from "../constants/info";
 
 const Header = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -15,7 +12,7 @@ const Header = () => {
     setIsLoading(true);
     setTimeout(() => {
       setIsLoading(false);
-    }, 2000); // Simulate the download delay
+    }, 2000);
   };
 
   useEffect(() => {
@@ -43,7 +40,7 @@ const Header = () => {
         {/* <h1 className="rainbow-text text-2xl font-semibold tracking-wide">
           Rabi Giri
         </h1> */}
-        <h1 className="animated-text-card">Rabi Giri</h1>
+        <h1 className="animated-text-card">{fullName}</h1>
         <nav className="hidden lg:flex items-center gap-12">
           <ul className="flex gap-4">
             <li>
@@ -103,6 +100,7 @@ const Header = () => {
           </ul>
         </nav>
       </div>
+      <ProgressBar />
     </div>
   );
 };

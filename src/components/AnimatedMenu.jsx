@@ -1,12 +1,11 @@
 import React, { useState } from "react";
-import { CSSTransition } from "react-transition-group";
-import { FaBars, FaSpinner, FaTimes } from "react-icons/fa";
-import "../App.css"; // Create this CSS file for animations
-import ParticlesComponent from "./ParticlesComponent";
+import { FaSpinner } from "react-icons/fa";
 import {
   MdKeyboardDoubleArrowLeft,
   MdKeyboardDoubleArrowRight,
 } from "react-icons/md";
+import { CSSTransition } from "react-transition-group";
+import "../App.css";
 
 const AnimatedMenu = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -21,7 +20,7 @@ const AnimatedMenu = () => {
     setIsLoading(true);
     setTimeout(() => {
       setIsLoading(false);
-    }, 2000); // Simulate the download delay
+    }, 2000);
   };
 
   return (

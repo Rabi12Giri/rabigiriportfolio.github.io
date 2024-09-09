@@ -5,10 +5,10 @@ import {
   DialogHeader,
 } from "@material-tailwind/react";
 import React from "react";
-import SimpleImageSlider from "react-simple-image-slider";
-import { DialogButton, SlickButton } from "./SharedUI/Buttons/Buttons";
 import { FaGithub, FaLink } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
+import SimpleImageSlider from "react-simple-image-slider";
+import { DialogButton, SlickButton } from "./SharedUI/Buttons/Buttons";
 
 const ProjectCard = ({ project }) => {
   const [open, setOpen] = React.useState(false);

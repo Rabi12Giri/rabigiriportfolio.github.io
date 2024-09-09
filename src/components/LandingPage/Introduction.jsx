@@ -1,8 +1,5 @@
-import React from "react";
-import { MdOutlineKeyboardDoubleArrowDown } from "react-icons/md";
 import { RxDoubleArrowDown } from "react-icons/rx";
 import { smoothScrollTo } from "../../utils/scrollUtils";
-import SkillSlider from "../SkillSlider";
 
 const Introduction = () => {
   return (
@@ -18,7 +15,7 @@ const Introduction = () => {
         href="#aboutme"
         onClick={(e) => {
           e.preventDefault();
-          smoothScrollTo("aboutme", 20); // Pass the offset in percentage of viewport height
+          smoothScrollTo("aboutme", 20);
         }}
       >
         <RxDoubleArrowDown className="text-3xl animate-bounce" />

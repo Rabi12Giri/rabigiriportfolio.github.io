@@ -22,17 +22,12 @@ const ProgressBar = () => {
   }, []);
 
   return (
-    <div className=" fixed dark:bg-white bg-white rounded-full p-1 z-10 right-7 bottom-7 animate-bounce">
-      <div className="progress rounded-full">
-        <a href="#hero">
-          <IoArrowUpCircle className="text-3xl text-primaryRed" />
-        </a>
-        <div className="progress-bar-container progress-bar-custom">
-          <div
-            className="progress"
-            style={{ width: `${scrollProgress}%` }}
-          ></div>
-        </div>
+    <div className="fixed bottom-0 left-0 w-full h-[3px] rounded-lg z-50">
+      <div className="w-full bg-gray-200">
+        <div
+          className="h-[3px] bg-primaryRed rounded-full transition-all duration-300"
+          style={{ width: `${scrollProgress}%` }}
+        ></div>
       </div>
     </div>
   );

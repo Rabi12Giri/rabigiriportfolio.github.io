@@ -325,23 +325,6 @@ html {
   background: #555;
 }
 
-/* progress bar */
-.progress-bar-container {
-  position: absolute; /* Adjusted to absolute to fit within a relative container */
-  left: 0;
-  bottom: 0; /* Position the progress bar at the bottom edge of the container */
-  width: 100%;
-  height: 3px; /* Adjust the height as needed */
-  background-color: #f0f0f0;
-  z-index: 999; /* Ensure it's above other elements */
-}
-
-.progress {
-  height: 100%;
-  background-color: #007bff;
-  border-radius: 5px;
-}
-
 /* hamburger menu */
 
 .menu-container {

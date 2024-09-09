@@ -1,5 +1,4 @@
 import React from "react";
-import { SecondaryHeading } from "./SharedUI/Heading";
 
 const ExperienceCard = () => {
   const experienceData = [

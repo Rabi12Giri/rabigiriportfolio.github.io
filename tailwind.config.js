@@ -15,6 +15,7 @@ export default withMT({
       colors: {
         primaryRed: "#E31B6D",
         // darkBg: "#333333",
+        secondaryBlue: "#31A0F8",
       },
       screens: {
         "719px": "719px",

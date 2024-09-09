@@ -1,13 +1,12 @@
 import { IoArrowUpCircle } from "react-icons/io5";
 import "./App.css";
-import CircleContent from "./components/CircleContent";
+import AnimatedMenu from "./components/AnimatedMenu";
+import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Aboutme from "./pages/Aboutme";
-import Projects from "./pages/Projects";
 import Experience from "./pages/Experience";
-import Footer from "./components/Footer";
-import ProgressBar from "./components/ProgressBar";
-import AnimatedMenu from "./components/AnimatedMenu";
+import Projects from "./pages/Projects";
+import MyWorksChart from "./components/MyWorksChart";
 
 function App() {
   return (
@@ -17,15 +16,19 @@ function App() {
           <AnimatedMenu />
         </div>
         <Hero />
+        <MyWorksChart />
+        <br />
+
         <Aboutme />
+
         <Projects />
-        {/* <CircleContent /> */}
         <Experience />
         <div className="fixed dark:bg-white bg-white rounded-full p-1 z-10 right-7 bottom-7 animate-bounce">
           <a href="#hero">
             <IoArrowUpCircle className="text-3xl text-primaryRed " />
           </a>
         </div>
+
         <Footer />
       </div>
     </>

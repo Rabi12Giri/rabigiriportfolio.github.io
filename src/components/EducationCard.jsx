@@ -1,6 +1,4 @@
 import React from "react";
-import { GiGraduateCap } from "react-icons/gi";
-import { SecondaryHeading } from "./SharedUI/Heading";
 
 const EducationCard = () => {
   const educationData = [
