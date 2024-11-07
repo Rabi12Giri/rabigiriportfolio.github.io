@@ -83,7 +83,7 @@ const Projects = () => {
       linkTo: "https://kritikakarakheti.com.np/",
     },
     {
-      id: 4,
+      id: 5,
       title: "Online Tutor Finder - Final Year Project",
       description: "Online Tutor Finder - Final Year Project",
       image: "/Projects/onlinetut4.png",
@@ -106,6 +106,27 @@ const Projects = () => {
       techStack: "MERN Stack",
       github: "https://github.com/Rabi12Giri",
       linkTo: "https://online-tutor-finder.vercel.app/",
+    },
+    {
+      id: 6,
+      title: "White Pearl Travel Tourism",
+      description: "White Pearl Travel Tourism",
+      image: "/Projects/whitepearl1.png",
+      details: {
+        images: [
+          "/Projects/whitepearl1.png",
+          "/Projects/whitepearl2.png",
+          "/Projects/whitepearl3.png",
+          "/Projects/whitepearl4.png",
+          "/Projects/whitepearl5.png",
+          "/Projects/whitepearl6.png",
+        ],
+        content:
+          "White Pearl Travel Tourism is a company based in Nepal located in Gyaneshwor, Kathmandu, Nepal. I had collaborated with backend developer to develop this site. I developed and maintained frontend pages using ReactJs and optimized the images to load them faster. I also integrated the API using Postman for efficiency. The website is still under development whilst the frontend pages are hosted.",
+      },
+      techStack: "MERN Stack",
+      github: "https://github.com/Rabi12Giri",
+      linkTo: "https://dev-travel-tours.vercel.app/",
     },
   ];
 
