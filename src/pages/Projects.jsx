@@ -2,11 +2,13 @@ import React from "react";
 
 import { PrimaryHeading } from "../components/SharedUI/Heading";
 import ProjectCard from "../components/ProjectCard";
+import { jobType } from "../constants/info";
 
 const Projects = () => {
   const projectData = [
     {
       id: 1,
+      jobType: jobType[2],
       title: "E-commerce Clothing Website",
       description: "Simple E-commerce Clothing Website",
       image: "/Projects/ecommercewebsite.png",
@@ -25,6 +27,7 @@ const Projects = () => {
     },
     {
       id: 2,
+      jobType: jobType[0],
       title: "Education Consultancy Website",
       description: "Genuine Education Consultancy Website for client",
       image: "/Projects/educationConsultancy.png",
@@ -45,6 +48,7 @@ const Projects = () => {
     },
     {
       id: 3,
+      jobType: jobType[0],
       title: "E-commerce Nursery Website",
       description: "Freelancing Project for a student about nursery e-commerce",
       image: "/Projects/nursery.png",
@@ -65,6 +69,7 @@ const Projects = () => {
     },
     {
       id: 4,
+      jobType: jobType[0],
       title: "Project Portfolio for a Client",
       description: "Freelancing Project for a researcher portfolio",
       image: "/Projects/portfolio.png",
@@ -84,6 +89,7 @@ const Projects = () => {
     },
     {
       id: 5,
+      jobType: jobType[2],
       title: "Online Tutor Finder - Final Year Project",
       description: "Online Tutor Finder - Final Year Project",
       image: "/Projects/onlinetut4.png",
@@ -109,6 +115,7 @@ const Projects = () => {
     },
     {
       id: 6,
+      jobType: jobType[0],
       title: "White Pearl Travel Tourism",
       description: "White Pearl Travel Tourism",
       image: "/Projects/whitepearl1.png",

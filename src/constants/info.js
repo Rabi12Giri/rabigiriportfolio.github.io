@@ -5,3 +5,5 @@ export const aboutMeData = {
   projectCompleted: "7",
   happyClients: "10",
 };
+
+export const jobType = ["Freelancing", "Academic Project", "Self Project"];

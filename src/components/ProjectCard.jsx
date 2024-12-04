@@ -30,7 +30,8 @@ const ProjectCard = ({ project }) => {
       </div>
       {/* Back Content */}
       <div className="absolute inset-0 flex flex-col justify-center px-3 items-center bg-[rgba(0,0,0,0.4)] text-white transform transition duration-500 ease-in-out translate-y-full group-hover:translate-y-0 group-hover:opacity-100 opacity-0">
-        <p className="mb-4 text-center">{project.description}</p>
+        <p className=" text-center">{project.description}</p>
+        <p className="mb-4">{project.jobType}</p>
         <SlickButton onClick={handleOpen}>Learn More</SlickButton>
       </div>
       <Dialog

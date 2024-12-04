@@ -41,7 +41,6 @@ const Footer = () => {
         <p className="text-sm font-semibold text-blue-400">
           giri.rabi.2004@gmail.com
         </p>
-        <p className="text-sm font-semibold text-blue-400">+977 9841868833</p>
       </div>
     </div>
   );
