@@ -32,6 +32,7 @@ const Navbar = () => {
         <div className="flex items-center gap-3">
           <a
             href={profile.resumeUrl}
+            target="_blank"
             className="hidden rounded-md border border-line-light px-4 py-2 font-mono text-sm text-ink-light transition-colors hover:border-garnet hover:text-garnet dark:border-line-dark dark:text-ink-dark dark:hover:border-garnet-dark dark:hover:text-garnet-dark md:inline-block"
           >
             Resume
@@ -73,6 +74,7 @@ const Navbar = () => {
             ))}
             <a
               href={profile.resumeUrl}
+              target="_blank"
               onClick={() => setOpen(false)}
               className="font-mono text-sm text-ink-light dark:text-ink-dark"
             >

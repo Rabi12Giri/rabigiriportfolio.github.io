@@ -10,8 +10,7 @@ export const profile = {
   role: "Frontend Developer",
   location: "Kathmandu, Nepal",
   email: "giri.rabi.2004@gmail.com",
-  // Drop your resume PDF into the `public/` folder and point this at it.
-  resumeUrl: "/resume.pdf",
+  resumeUrl: "public/resume.pdf",
   social: {
     github: "https://github.com/Rabi12Giri",
     linkedin: "https://www.linkedin.com/in/rabi-giri/",
