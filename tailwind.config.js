@@ -41,5 +41,9 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addVariant }) {
+      addVariant("hoverable", "@media (hover: hover) and (pointer: fine)");
+    },
+  ],
 };

@@ -4,7 +4,7 @@ import { projects } from "../data/portfolioData";
 import { useInView } from "../hooks/useInView";
 
 const ProjectCard = ({ project }) => (
-  <article className="group flex flex-col overflow-hidden rounded-xl border border-line-light transition-colors hover:border-garnet dark:border-line-dark dark:hover:border-garnet-dark">
+  <article className="group flex flex-col overflow-hidden rounded-xl border border-line-light transition-colors dark:border-line-dark cursor-pointer">
     <div className="flex aspect-video items-center justify-center border-b border-line-light bg-surface-light font-display text-sm text-muted-light dark:border-line-dark dark:bg-surface-dark dark:text-muted-dark">
       <img src={project.image} alt={project.title} />
     </div>

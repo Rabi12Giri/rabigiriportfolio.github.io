@@ -40,7 +40,7 @@ const Hero = () => {
           <div className="mt-8 flex flex-wrap gap-4">
             <a
               href="#projects"
-              className="rounded-md bg-ink-light px-5 py-3 font-mono text-sm text-paper-light transition-opacity hover:opacity-90 dark:bg-ink-dark dark:text-paper-dark"
+              className="rounded-md bg-ink-light px-5 py-3 font-mono text-sm text-paper-light transition-opacity hover:bg-garnet dark:bg-ink-dark hover:dark:bg-garnet-dark dark:text-paper-dark"
             >
               View projects
             </a>
@@ -56,9 +56,9 @@ const Hero = () => {
         <div className="overflow-hidden rounded-xl border border-line-light bg-surface-light shadow-sm dark:border-line-dark dark:bg-surface-dark">
           <div className="flex items-center justify-between border-b border-line-light px-4 py-3 dark:border-line-dark">
             <div className="flex gap-1.5">
-              <span className="h-3 w-3 rounded-full bg-line-light dark:bg-line-dark" />
-              <span className="h-3 w-3 rounded-full bg-line-light dark:bg-line-dark" />
-              <span className="h-3 w-3 rounded-full bg-line-light dark:bg-line-dark" />
+              <span className="h-3 w-3 rounded-full bg-red-500 " />
+              <span className="h-3 w-3 rounded-full bg-yellow-500 " />
+              <span className="h-3 w-3 rounded-full bg-green-500 " />
             </div>
             <span className="font-mono text-xs text-muted-light dark:text-muted-dark">
               Hero.jsx
@@ -85,8 +85,8 @@ const Hero = () => {
                 role=<Str>"Frontend Developer"</Str>
               </div>
               <div className="pl-12">
-                stack=<Punct>{"{"}</Punct>[<Str>"React"</Str>,{" "}
-                <Str>"Node"</Str>, <Str>"MongoDB"</Str>]<Punct>{"}"}</Punct>
+                stack=<Punct>{"{"}</Punct>[<Str>"React"</Str>, <Str>"Node"</Str>
+                , <Str>"MongoDB"</Str>]<Punct>{"}"}</Punct>
               </div>
               <div className="pl-12">
                 location=<Str>"Kathmandu, NP"</Str>

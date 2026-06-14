@@ -33,7 +33,7 @@ const Skills = () => {
                 {group.items.map((item) => (
                   <span
                     key={item}
-                    className="rounded-md border border-line-light px-3 py-1.5 font-mono text-sm text-ink-light dark:border-line-dark dark:text-ink-dark"
+                    className="cursor-pointer rounded-md border border-line-light px-3 py-1.5 font-mono text-sm text-ink-light transition-colors duration-200 hoverable:hover:border-garnet hoverable:hover:text-garnet dark:border-line-dark dark:text-ink-dark dark:hoverable:hover:border-garnet-dark dark:hoverable:hover:text-garnet-dark"
                   >
                     {item}
                   </span>
