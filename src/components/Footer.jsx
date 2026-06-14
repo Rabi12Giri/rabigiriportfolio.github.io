@@ -1,48 +1,23 @@
 import React from "react";
-import { FaEnvelope, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { profile } from "../data/portfolioData";
 
 const Footer = () => {
-  return (
-    <div className="mt-5 pb-5 lg:pb-2 lg:mt-0 flex flex-col lg:flex-row justify-between items-center px-12 text-center dark:bg-black relative bg-white dark:text-white">
-      <div>
-        <ul className="wrapper ">
-          <a
-            href="https://www.linkedin.com/in/rabi-giri-23905b23a/"
-            target="_blank"
-          >
-            <li className="icon linkedin dark:bg-black">
-              <span className="tooltip">LinkedIn</span>
-              <FaLinkedin className="text-xl " />
-            </li>
-          </a>
-          <a href="https://github.com/Rabi12Giri" target="_blank">
-            <li className="icon github dark:bg-black">
-              <span className="tooltip">GitHub</span>
-              <FaGithub className="text-xl " />
-            </li>
-          </a>
-          <a href="https://www.instagram.com/rabi__giri/" target="_blank">
-            <li className="icon instagram dark:bg-black">
-              <span className="tooltip ">Instagram</span>
-              <FaInstagram className="text-xl" />
-            </li>
-          </a>
+  const year = new Date().getFullYear();
 
-          <a href="mailto:giri.rabi.2004@gmail.com">
-            <li className="icon mail dark:bg-black">
-              <span className="tooltip">Mail</span>
-              <FaEnvelope className="text-xl" />
-            </li>
-          </a>
-        </ul>
+  return (
+    <footer className="border-t border-line-light dark:border-line-dark">
+      <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 py-8 font-mono text-xs text-muted-light dark:text-muted-dark sm:flex-row">
+        <span>
+          © {year} {profile.name}. All rights reserved.
+        </span>
+        <a
+          href="#home"
+          className="text-ink-light hover:text-garnet dark:text-ink-dark dark:hover:text-garnet-dark"
+        >
+          Back to top ↑
+        </a>
       </div>
-      <p>&copy; 2024 All Rights Reserved by Rabi Giri</p>
-      <div className="flex flex-col items-center lg:items-start space-y-2 mt-3 ">
-        <p className="text-sm font-semibold text-blue-400">
-          giri.rabi.2004@gmail.com
-        </p>
-      </div>
-    </div>
+    </footer>
   );
 };
 
