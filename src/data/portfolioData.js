@@ -10,7 +10,7 @@ export const profile = {
   role: "Frontend Developer",
   location: "Kathmandu, Nepal",
   email: "giri.rabi.2004@gmail.com",
-  resumeUrl: "public/resume.pdf",
+  resumeUrl: "/resume.pdf",
   social: {
     github: "https://github.com/Rabi12Giri",
     linkedin: "https://www.linkedin.com/in/rabi-giri/",
